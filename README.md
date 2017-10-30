@@ -1,3 +1,3 @@
 # ITSC_3155_Group_Project
 
-# Contributor: David Cothron
+# Contributors: David Cothron, Jason Jansen, ...
