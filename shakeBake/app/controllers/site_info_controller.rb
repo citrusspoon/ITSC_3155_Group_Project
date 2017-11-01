@@ -1,0 +1,2 @@
+class SiteInfoController < ApplicationController
+end
