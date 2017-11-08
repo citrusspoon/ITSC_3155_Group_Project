@@ -1,6 +1,8 @@
+<%= form_with scope: :pairing, local: true do |form| %>
+
 <div id="list_container">
   <input type="text" name="target">
   <div id="list-contents">
-    <%=  %>
+    <%= f.collection_select :drink_id, @drinks.order(:name),:id => 'drink_list',:name => 'drink_list', include_blank: false, :"multiple" => '' %>
   </div>
 </div>
