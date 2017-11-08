@@ -1,7 +1,7 @@
 class PairingController < ApplicationController
   def match
-    @drinks = Drink.all
-    @breads = Bread.all
-    @pairs = Pair.all
+    @drinks = Drink.pluck(:name)
+    @breads = Bread.pluck(:name)
+    @pairs = Pair.pluck(:name)
   end
 end
