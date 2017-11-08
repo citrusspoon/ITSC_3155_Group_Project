@@ -1,2 +1,0 @@
-class Bread < ApplicationRecord
-end
