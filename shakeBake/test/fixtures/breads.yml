@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pkey: 1
+  name: MyString
+  desc: MyString
+  imgurl: MyString
+
+two:
+  pkey: 1
+  name: MyString
+  desc: MyString
+  imgurl: MyString
