@@ -22,7 +22,8 @@
             <br><br><br><br><br><br>
         </div>
         <br><br><br><br><br><br>
-
+        
+<% if false %>
         <%= button_to "Pairings", action: "pairing" %>
         # => "<form method="post" action="/controller/pairing_controller" class="button_to">
         #      <input value="Search for a Drink/Bread Pairing" type="submit" />
@@ -34,6 +35,8 @@
         # => "<form method="post" action="/controller/pairing_controller" class="button_to">
         #      <input value="Submit Your Own Drink/Bread Pairing" type="submit" />
         #    </form>"
+       
+<% end %>
     </div>
 </body>
 </html>
