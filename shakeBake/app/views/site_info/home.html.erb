@@ -12,17 +12,28 @@
 
 <body>
     <div id="main">
+    <br>
+
+    <%= image_tag("logo2.png", :alt => "logo", :size => "200x200", :style => "display: block; margin-left: auto; margin-right: auto;") %>
+
     <h1>Shakers and Bakers Homepage</h1>
-    <p>Welcome to Shakers and Bakers, where we love equaly our crossaints and our cocktails</p>
+
         <div class="test">
-            <br><br>
+            <br><br><br><br><br><br>
         </div>
-        <div class="test">
-            <br><br>
-        </div>
-        <div class="test">
-            <br><br>
-        </div>
+        <br><br><br><br><br><br>
+
+        <%= button_to "Pairings", action: "pairing" %>
+        # => "<form method="post" action="/controller/pairing_controller" class="button_to">
+        #      <input value="Search for a Drink/Bread Pairing" type="submit" />
+        #    </form>"
+
+        <br><br><br><br><br><br>
+
+        <%= button_to "Custom", action: "custom" %>
+        # => "<form method="post" action="/controller/pairing_controller" class="button_to">
+        #      <input value="Submit Your Own Drink/Bread Pairing" type="submit" />
+        #    </form>"
     </div>
 </body>
 </html>

@@ -2,9 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #main {
-    background-color: gray;
+    background-color: LightGray;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    height: 100vh;
 }
 
 .test {
     background-color: #008B8B;
+    margin: auto;
+    width: 70%;
+}
+
+h1, p {
+    font-family: sans-serif;
+    text-align: center;
 }
