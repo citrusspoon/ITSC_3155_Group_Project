@@ -1,42 +1,17 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Shakers and Bakers</title>
-  <meta name="description" content="Bread and Drink pairings">
-  <meta name="author" content="Shakers and Bakers">
-
-</head>
-
-<body>
     <div id="main">
     <br>
 
-    <%= image_tag("logo2.png", :alt => "logo", :size => "200x200", :style => "display: block; margin-left: auto; margin-right: auto;") %>
+    <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: block;") %>
 
     <h1>Shakers and Bakers Homepage</h1>
-
+    <br><br><br>
         <div class="test">
             <br><br><br><br><br><br>
         </div>
-        <br><br><br><br><br><br>
+        <br><br><br>
         
-<% if false %>
-        <%= button_to "Pairings", action: "pairing" %>
-        # => "<form method="post" action="/controller/pairing_controller" class="button_to">
-        #      <input value="Search for a Drink/Bread Pairing" type="submit" />
-        #    </form>"
 
-        <br><br><br><br><br><br>
+    <%= link_to 'Search for a Drink/Bread Pairing', pairing_index_path, :class => 'nav' %>
 
-        <%= button_to "Custom", action: "custom" %>
-        # => "<form method="post" action="/controller/pairing_controller" class="button_to">
-        #      <input value="Submit Your Own Drink/Bread Pairing" type="submit" />
-        #    </form>"
-       
-<% end %>
+    <%= link_to 'Submit your own Drink/Bread Pairing', pairing_index_path, :class => 'nav button2' %>
     </div>
-</body>
-</html>
