@@ -1,17 +1,18 @@
     <div id="main">
     <br>
-
-    <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: block;") %>
-
-    <h1>Shakers and Bakers Homepage</h1>
-    <br><br><br>
+    <div class="center">
+    <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: inline;") %>
+    </div>
+    <h1>Home</h1>
+    <br>
         <div class="test">
-            <br><br><br><br><br><br>
+            <br><br><br><p>Slideshow goes here</p><br><br><br>
         </div>
         <br><br><br>
         
-
+    <div class="center">
     <%= link_to 'Search for a Drink/Bread Pairing', pairing_index_path, :class => 'nav' %>
-
+    <br><br>
     <%= link_to 'Submit your own Drink/Bread Pairing', pairing_index_path, :class => 'nav button2' %>
+    </div>
     </div>
