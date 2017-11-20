@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   get 'site_info/home'
   root to: 'site_info#home'
+  get 'site_info/about'
+  get 'site_info/contact'
   
   resources :pairing
 
