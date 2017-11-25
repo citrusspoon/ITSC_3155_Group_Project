@@ -1,0 +1,7 @@
+<div class="list-container">
+  <%= form_for @pairng do |f| %>
+  <%=  @drinks.each do |val| %>
+    <%= f.radio_button("drinks", "option", val, :class => list-item) %>
+  <% end %>
+  <% end %>
+</div>
