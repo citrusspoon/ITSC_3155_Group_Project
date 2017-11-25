@@ -5,7 +5,23 @@
     <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: inline;") %>
     </div>
     <h1>Pairings</h1>
-    
+
+
+<table style="width:70%" align="center">
+  <tr>
+    <th>Drink</th>
+    <th>Pair</th> 
+    <th>Bread</th>
+  </tr>
+<% @drinks.each do |drink| %>
+    <tr>
+      <td><%= drink.name %></td>
+      
+    </tr>
+  <% end %>
+  </table>
+
+<br><br><br><br>
   <table style="width:70%" align="center">
   <tr>
     <th>Drink</th>
@@ -23,6 +39,8 @@
     <td>Rye</td>
   </tr>
 </table>
+
+
 <br><br>
 <div class="center">
 <%= link_to 'Your Pair Not Listed? Create your Own Here', site_info_home_path, :id => "createown", :style => "text-decoration: underline; color: black; font-weight: bold; font-family: sans-serif;" %>

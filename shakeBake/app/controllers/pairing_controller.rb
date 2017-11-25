@@ -12,6 +12,7 @@ class PairingController < ApplicationController
   end
   
   def index
+   @drinks = Drink.all
   end
   
   def update
