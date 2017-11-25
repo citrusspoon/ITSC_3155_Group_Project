@@ -22,12 +22,6 @@ pair_list = [
   {"name" => "Sweet and Spicy", "desc" => "Fireball and Cream Cheese Danish"}
 ]
 
-  def match
-    @drinks = Drink.pluck(:name)
-    @breads = Bread.pluck(:name)
-    @pairs = Pair.pluck(:name)
-  end
-  
   def new
   end
   
@@ -35,6 +29,9 @@ pair_list = [
   end
   
   def index
+    @drinks = Drink.pluck(:name)
+    @breads = Bread.pluck(:name)
+    @pairs = Pair.pluck(:name)
   end
   
   def update
