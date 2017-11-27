@@ -13,9 +13,11 @@
     <th>Pair</th> 
     <th>Bread</th>
   </tr>
-<% @drinks.each do |drink| %>
+<% @pairs.each do |pair| %>
     <tr>
-      <td><%= drink.name %></td>
+      <td><%= pair.drink.name %></td>
+      <td><%= pair.name %></td>
+      <td><%= pair.bread.name %></td>
       
     </tr>
   <% end %>

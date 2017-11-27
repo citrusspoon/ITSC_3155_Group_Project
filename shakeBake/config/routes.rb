@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   get 'site_info/home'
   root to: 'site_info#home'
-  #resources :pairing_controller
+  #cd sharesources :pairing_controller
   resources :pairing
 
 end

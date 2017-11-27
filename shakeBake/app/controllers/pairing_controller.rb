@@ -13,6 +13,8 @@ class PairingController < ApplicationController
   
   def index
    @drinks = Drink.all
+   @breads = Bread.all
+   @pairs = Pair.all
   end
   
   def update

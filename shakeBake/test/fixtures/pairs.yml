@@ -3,7 +3,11 @@
 one:
   name: MyString
   desc: MyText
+  drink: one
+  bread: one
 
 two:
   name: MyString
   desc: MyText
+  drink: two
+  bread: two
