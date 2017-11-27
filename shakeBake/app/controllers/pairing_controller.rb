@@ -1,10 +1,4 @@
 class PairingController < ApplicationController
-  def match
-    @drinks = Drink.pluck(:name)
-    @breads = Bread.pluck(:name)
-    @pairs = Pair.pluck(:name)
-  end
-  
   def new
   end
   
@@ -12,6 +6,8 @@ class PairingController < ApplicationController
   end
   
   def index
+    @drinks = Drink.pluck(:name)
+    @breads = Bread.pluck(:name)
   end
   
   def update
