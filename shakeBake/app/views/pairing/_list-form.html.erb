@@ -1,5 +1,5 @@
 <div class="list-container">
-  <%= form_for @pairs do |f| %>
+  <%= form_for :selected_pairs do |f| %>
     <div id="drink_lists">
       <%=  @drinks.each do |val| %>
         <%= f.radio_button("drinks", "option", val, :class => list-item) %>
