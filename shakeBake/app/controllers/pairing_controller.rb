@@ -31,7 +31,7 @@ pair_list = [
   def index
     @drinks = Drink.pluck(:name)
     @breads = Bread.pluck(:name)
-    @pairs = Pair.pluck(:name)
+   # @pairs = Pair.pluck(:name)
   end
   
   def update
