@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171113215928) do
+ActiveRecord::Schema.define(version: 20171127213525) do
 
   create_table "breads", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,26 @@ ActiveRecord::Schema.define(version: 20171113215928) do
     t.text "desc"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "pairing_models", force: :cascade do |t|
+    t.text "drink", null: false
+    t.string "/"
+    t.text "food"
+    t.integer "rating"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pairs", force: :cascade do |t|
+    t.string "name"
+    t.integer "drink_id"
+    t.integer "bread_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bread_id"], name: "index_pairs_on_bread_id"
+    t.index ["drink_id"], name: "index_pairs_on_drink_id"
   end
 
 end
