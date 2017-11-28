@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   root to: 'site_info#home'
   
   resources :pairing
+  
+  resources :pairs do
+    resources :drinks
+    resources :breads
+  end
 
 end
