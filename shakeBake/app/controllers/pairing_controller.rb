@@ -5,6 +5,7 @@ class PairingController < ApplicationController
   
   def show
     @pair = Pair.find(params[:id])
+    
   end
   
   def query
@@ -12,7 +13,7 @@ class PairingController < ApplicationController
     if @query.blank?
       redirect_to :action => "new"
     else
-      redirect_to :action => "show", :id => @query[0]['id'].class.inspect.to_i
+      redirect_to :action => "show", :id => @query[0]['id']
     end
   end
   
