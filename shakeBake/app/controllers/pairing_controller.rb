@@ -8,7 +8,7 @@ class PairingController < ApplicationController
   end
   
   def query
-    @query = Pair.find_by_sql("SELECT * FROM pairs WHERE #{params[:d_option]} == drink AND #{params[:b_option]} == bread;")
+    @query = Pair.find_by_sql("SELECT * FROM pairs WHERE \'#{params[:drinks]}\' == drink AND \'#{params[:breads]}\' == bread;")
     if @query.blank?
       redirect_to :action => "new"
     else

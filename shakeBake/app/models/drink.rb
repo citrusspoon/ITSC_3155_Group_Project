@@ -1,3 +1,3 @@
 class Drink < ApplicationRecord
-    belongs_to :pairs
+    #belongs_to :pairs
 end
