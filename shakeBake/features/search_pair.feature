@@ -6,5 +6,7 @@ Scenario: As a browser, I want to be able to navigate from the home page to the 
   Given I am on the home page
   When I click on the "Search for a Drink/Bread Pairing" link
   Then I should be on the "Pairings" page
-  And I should see the "Bread" list
-  And I should see the "drinks" list
+  When I click on the "Bread" button
+  When I click on the "Drink" button
+  When I click on the "Search" button
+  Then I should be on the "Description" page
