@@ -9,4 +9,5 @@ Scenario: I want to be able to navigate to the new pair form
   Then I should be on "Pairings" page
   And I should see the "Bread" list
   And I should see the "Drink" list
-  And I should see the "Submit" button
+  When I click on the "Submit" button
+  Then I should be on the "Description" page

@@ -7,4 +7,4 @@ Scenario: As a browser, I want to be able to navigate from the home page to the 
   When I click on the "Search for a Drink/Bread Pairing" link
   Then I should be on the "" page
   And I should see the "Bread" list
-  And I should see the "Drink" list
+  And I should see the "drinks" list
