@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   
   get 'site_info/home'
   root to: 'site_info#home'
+  get 'pairing/query' 
   
   resources :pairing
+  
+  
 
 end

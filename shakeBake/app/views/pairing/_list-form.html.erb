@@ -1,13 +1,13 @@
 <div class="list-container">
-  <%= form_for :selected_pairs do |f| %>
+  <%= form_for url: pairing_query_path :selected_pairs do |f| %>
     <div id="drink_lists">
       <%=  @drinks.each do |val| %>
-        <%= f.radio_button("drinks", "option", val, :class => list-item) %>
+        <%= f.radio_button("drinks", "d_option", val, :class => list-item) %>
       <% end %>
     </div>
     <div id="bread_list">
       <%=  @breads.each do |val| %>
-        <%= f.radio_button("breads", "option", val, :class => list-item) %>
+        <%= f.radio_button("breads", "b_option", val, :class => list-item) %>
       <% end %>
     </div>
     <%= f.submit("Find my Pairing!", :id => "submit_button") %>
