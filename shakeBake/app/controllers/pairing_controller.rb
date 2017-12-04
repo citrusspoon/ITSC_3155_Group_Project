@@ -5,7 +5,6 @@ class PairingController < ApplicationController
   
   def show
     @pair = Pair.find(params[:id])
-    #puts @pair.drink
   end
   
   def query
@@ -23,5 +22,8 @@ class PairingController < ApplicationController
   end
   
   def update
+  end
+
+  def destroy
   end
 end
