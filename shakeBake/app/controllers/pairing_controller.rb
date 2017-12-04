@@ -1,8 +1,20 @@
 class PairingController < ApplicationController
   def new
+    Pair.new
   end
   
   def show
+    @pair = Pair.find(params[:id])
+    #puts @pair.drink
+  end
+  
+  def query
+    @query = Pair.find_by_sql("SELECT * FROM pairs WHERE \'#{params[:drinks]}\' == drink AND \'#{params[:breads]}\' == bread;")
+    if @query.blank?
+      redirect_to :action => "new"
+    else
+      redirect_to :action => "show", :id => @query[0]['id']
+    end
   end
   
   def index
