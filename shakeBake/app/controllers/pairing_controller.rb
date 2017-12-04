@@ -10,7 +10,7 @@ class PairingController < ApplicationController
   def query
     @query = Pair.find_by_sql("SELECT * FROM pairs WHERE \'#{params[:drinks]}\' == drink AND \'#{params[:breads]}\' == bread;")
     if @query.blank?
-      redirect_to :action => "new"
+      redirect_to :action => "new", :drink => params[:drinks], :bread => params[:breads]
     else
       redirect_to :action => "show", :id => @query[0]['id']
     end

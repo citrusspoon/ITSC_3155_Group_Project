@@ -4,12 +4,12 @@
     <div class="center">
     <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: inline;") %>
     </div>
-    <h1>New Pairings</h1>
+    <h1>Create a Pairing</h1>
 
     <%= form_for @article do |f| %>
       <div class="hidden_fields">
-        <%= f.hidden_field() %>
-        <%= f.hidden_field() %>
+        <%= f.hidden_field(:drink, :value => params[:drink]) %>
+        <%= f.hidden_field(:bread, :value => params[:bread]) %>
       </div>
       <div class="text_field">
         <%= f.label :desc %><br>
