@@ -4,8 +4,21 @@
     <div class="center">
     <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: inline;") %>
     </div>
-    <h1>Pairings</h1>
+    <h1>New Pairings</h1>
 
-    <!-- Code Here -->
+    <%= form_for @article do |f| %>
+      <div class="hidden_fields">
+        <%= f.hidden_field() %>
+        <%= f.hidden_field() %>
+      </div>
+      <div class="text_field">
+        <%= f.label :desc %><br>
+        <%= f.text_area :desc %>
+      </div>
+      <div id="submission">
+        <%= f.submit %>
+      </div>
+
+    <% end %>
 
 </div>
