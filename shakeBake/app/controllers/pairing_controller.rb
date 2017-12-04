@@ -1,6 +1,6 @@
 class PairingController < ApplicationController
   def new
-    Pair.new
+    @pair = Pair.new
   end
   
   def show
