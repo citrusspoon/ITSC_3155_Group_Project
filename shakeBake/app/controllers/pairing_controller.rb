@@ -20,6 +20,16 @@ class PairingController < ApplicationController
     @drinks = Drink.pluck(:name)
     @breads = Bread.pluck(:name)
   end
+
+  def create
+    @pair = Pair.new(pairs_params)
+
+    if @pair.save
+      redirect_to @pair
+    else
+      render 'new'
+    end
+  end
   
   def update
   end
