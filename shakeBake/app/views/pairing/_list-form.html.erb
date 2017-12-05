@@ -6,7 +6,6 @@
         <%= radio_button_tag("drinks", val, false, :class => "list-item") %> <%= val %><br>
       <% end %>
     </div>
-    <br>
     <div id="bread_list">
       <%  @breads.each do |val| %>
         <%= radio_button_tag("breads", val, false, :class => "list-item") %> <%= val %><br>
@@ -14,4 +13,5 @@
     </div>
     <%= submit_tag("Find my Pairing!", :class => "submit_button") %>
   <% end %>
+  <br><br>
 </div>

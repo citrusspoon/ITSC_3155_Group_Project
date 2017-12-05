@@ -2,12 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#list_field
+#drink_lists
 {
-
+    float: left;
 }
 
-.list_item
+#bread_list
 {
+    float: right;
+}
 
+.list-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
