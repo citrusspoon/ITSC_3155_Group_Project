@@ -1,2 +1,0 @@
-class BreadsController < ApplicationController
-end
