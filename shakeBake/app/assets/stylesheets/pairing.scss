@@ -21,3 +21,15 @@
 .submit_div {
     clear: both;
 }
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+.label {
+    cursor: pointer;
+}
+
+input:checked > .label{
+    background-color: red;
+}

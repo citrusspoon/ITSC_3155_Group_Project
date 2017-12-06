@@ -209,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backports (~> 3.10.3)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
