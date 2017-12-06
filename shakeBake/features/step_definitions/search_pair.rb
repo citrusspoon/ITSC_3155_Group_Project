@@ -19,7 +19,7 @@ Given("I am on the submit description page") do
 end
 
 When("I fill in the {string} box") do |string|
-  fill_in('Desc', :with => 'I like trai-breads.')
+  fill_in(string, :with => 'I like trai-breads.')
 end
 
 When("I click on the {string} button") do |string|
