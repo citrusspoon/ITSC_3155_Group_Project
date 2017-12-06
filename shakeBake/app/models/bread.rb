@@ -1,2 +1,3 @@
 class Bread < ApplicationRecord
+
 end
