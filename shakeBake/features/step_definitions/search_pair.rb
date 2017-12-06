@@ -6,18 +6,22 @@ When("I click on the {string} link") do |string|
     click_link string
 end
 
-Then("I should be on {string} page") do |string|
-    expect(page).to have_content(string)
-end
-
 Then("I should be on the {string} page") do |string|
     expect(page).to have_content(string)
 end
 
-When("I click on the {string} button") do |string|
-    choose(string)
+Given("I am on the description page") do
+    visit pairing_query_path
 end
 
-When("click on the {string} button") do |string|
-    choose(string)
+Given("I am on the submit description page") do
+    visit new_pairing_path
+end
+
+When("I fill in the {string} box") do |string|
+  fill_in('Desc', :with => 'I like trai-breads.')
+end
+
+When("I click on the {string} button") do |string|
+    click_button(string) 
 end
