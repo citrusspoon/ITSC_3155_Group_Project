@@ -25,7 +25,7 @@ class PairingController < ApplicationController
     @pair = Pair.new(pairs_params)
 
     if @pair.save
-      redirect_to @pair
+      redirect_to pairing_index_path
     else
       render 'new'
     end
@@ -36,4 +36,9 @@ class PairingController < ApplicationController
 
   def destroy
   end
+  
+  private
+    def pairs_params
+        params.require(:pair).permit(:drink,:bread,:desc)
+    end
 end

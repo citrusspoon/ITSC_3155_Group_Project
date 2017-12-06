@@ -8,7 +8,7 @@ rails generate model Drink name:string desc:text
 rails generate model Bread name:string desc:text
 rails generate model Pair drink:string bread:string desc:text
 
-rails db:migrate
+#rails db:migrate
 
 rails r "$(dirname $0)/samples.rb"
 
