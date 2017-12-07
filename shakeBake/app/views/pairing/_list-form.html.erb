@@ -3,8 +3,7 @@
     <div id="drink_lists">
       <%  @drinks.each do |val| %>
       <%= puts val %>
-        <%= radio_button_tag("drinks", val, false, :class => "list-item") %> 
-        <%= label "drinks", val, :class => "label" %>
+        <%= radio_button_tag("drinks", val, false, :class => "list-item") %> <span class="label"><%= val %></span><br>
       <% end %>
     </div>
     <div id="bread_list">

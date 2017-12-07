@@ -3,16 +3,9 @@
     
     <div class="center">
     <%= image_tag("logo2.png", :alt => "logo", :size => "150x150", :style => "display: inline;") %>
+    </div>
     <h1><span class="spec"><%= @pair.drink %></span> and <span class="spec"><%= @pair.bread %></span></h1>
-    <hr>
-    <h2>Pairing Description:</h2>
-    <br>
-    <div class="box">
-    <p class="descbox1">" </p>
     <p class="descbox">
       <%= @pair.desc %>
     </p>
-    <p class="descbox1"> "</p>
-    </div>
-    </div>
 </div>
