@@ -21,3 +21,94 @@
 .submit_div {
     clear: both;
 }
+
+.list-item {
+    display: inline-block;
+  background-color: red;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.descbox {
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+.descbox1 {
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.box {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: WhiteSmoke;
+}
+
+.text_field {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.nav1 {
+    background-color: orange;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1em;
+    margin: auto;
+    width: 20%;
+    height: 5%;
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+
+.nav1:hover {
+    background-color: gold;
+    color: black;
+}
+
+.nav1:active {
+    background-color: white;
+    color: black;
+}
+
+.textarea1 {
+    width: 60%;
+    height: 150px;
+    border-style: inset;
+    border-color: black;
+    border-width: 5px;
+    background-color: whitesmoke;
+}
+
+::-webkit-input-placeholder {
+   font-size: 1.3em;
+}
