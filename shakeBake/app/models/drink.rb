@@ -1,3 +1,2 @@
 class Drink < ApplicationRecord
-
 end

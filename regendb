@@ -4,12 +4,12 @@ rails destroy model Drink
 rails destroy model Bread
 rails destroy model Pair
 
+rm shakeBake/db/development.sqlite3
+
 rails generate model Drink name:string desc:text
 rails generate model Bread name:string desc:text
 rails generate model Pair drink:string bread:string desc:text
 
-#rails db:migrate
+rails db:migrate
 
 rails r "$(dirname $0)/samples.rb"
-
-rails db:migrate
