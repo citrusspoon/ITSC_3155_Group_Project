@@ -13,3 +13,16 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+
+$(document).ready(function() {
+
+  $(".item-value").on("click touch", function() {
+     $("#list-item-" + $(this).html().replace(" ", "-")).prop('checked', true);
+     console.log("Clicked");
+  });
+  
+});
+  
+});
