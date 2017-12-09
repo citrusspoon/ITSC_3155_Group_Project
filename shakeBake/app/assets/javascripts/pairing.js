@@ -1,4 +1,4 @@
-$(document).on('page:change', function() {
+/*$(document).on('page:change', function() {
 
 $(document).ready(function() {
 console.log("Ready!");
@@ -10,3 +10,4 @@ console.log("Ready!");
 });
 
 });
+*/
